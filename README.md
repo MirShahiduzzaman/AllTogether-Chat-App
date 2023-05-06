@@ -1,4 +1,4 @@
-# NextJS Chat Tutorial
+# ConnectUs Messages
 
 # Login/Sign Up
 <img 
