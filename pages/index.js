@@ -1,32 +1,35 @@
 import React, { useContext } from "react";
-
-import { Context } from '../context'
+import { Context } from '../context';
 import { useRouter } from "next/router";
-import axios from 'axios'
+import axios from 'axios';
+
+// const path = require('path')
+// require('dotenv').config({ path: path.resolve(__dirname, '../.env') })
+// require('dotenv').config({ path: '../.env' })
 
 export default function Auth() {
-  const { username, secret, setUsername, setSecret } = useContext(Context)
+  const { username, secret, setUsername, setSecret } = useContext(Context);
 
-  const router = useRouter()
+  const router = useRouter();
 
   function onSubmit(e){
-    e.preventDefault()
+    e.preventDefault();
 
     if (username.length == 0 || secret.length == 0)
-      return
+      return;
 
     axios.put(
       "https://api.chatengine.io/users/",
       {username: username, secret: secret},
-      {headers: {"Private-key": "5463bc18-a975-4d50-b302-3b252e2f359e"}}
+      {headers: {"Private-key": process.env.NEXT_PUBLIC_API_KEY}}
     )
-    .then(r => router.push('/chats'))
+    .then(r => router.push('/chats'));
   }
   return (
     <div className="background">
       <div className="auth-container">
         <form className="auth-form" onSubmit={(e) => onSubmit(e)}>
-          <div className="auth-title">NextJS Chat</div>
+          <div className="auth-title">ConnectUs Messages</div>
 
           <div className="input-container">
             <input
@@ -51,5 +54,5 @@ export default function Auth() {
         </form>
       </div>
     </div>
-  )
+  );
 }

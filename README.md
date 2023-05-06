@@ -1,18 +1,21 @@
 # NextJS Chat Tutorial
 
+# Login/Sign Up
 <img 
-    src="https://raw.githubusercontent.com/alamorre/nextjs-chat-app/main/assets/nextjs-chat-tutorial.png" 
+    src="./login-screen.png"
     width="75%" 
     height="100%"
 />
 
 This project is powered by [Chat Engine](https://chatengine.io).
 
-## Tutorial Setup
+## Setup
 
 Code > Download Zip
 
-Push to your own repo and link to [vercel](https://vercel.io) or [glitch](https://glitch.com/).
+Create your own repo then follow instructions below before commiting and pushing project
+
+Link to [vercel](https://vercel.io) or [glitch](glitch.com)
 
 ## Setup Finished Project
 

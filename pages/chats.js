@@ -3,6 +3,8 @@ import { Context } from "../context";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 
+console.log(process.env);
+
 const ChatEngine = dynamic(() =>
   import("react-chat-engine").then((module) => module.ChatEngine)
 );
@@ -12,7 +14,7 @@ const MessageFormSocial = dynamic(() =>
 );
 
 export default function Chats() {
-  const { username, secret } = useContext(Context);
+  const { username, secret, setUsername, setSecret } = useContext(Context);
   const [showChat, setShowChat] = useState(false);
   const router = useRouter();
 
@@ -20,23 +22,33 @@ export default function Chats() {
     if(typeof document !== null) {
       setShowChat(true);
     }
-  })
+  });
 
   useEffect(() =>{
     if(username.length === 0 || secret.length === 0) router.push("/");
-  })
+  });
 
   if(!showChat) return <div />;
 
+  
+  function logout() {
+    setUsername("");
+    setSecret("");
+  }
+
   return (
     <div className="background">
+      <div className="logout">
+        <button onClick={logout}>Logout</button>
+      </div>
+
       <div className="shadow">
         <ChatEngine
           height = "calc(100vh - 200px)"
-          projectID = "b96c1ad7-3bd0-4bf0-949b-e340bff13427"
+          projectID = {process.env.NEXT_PUBLIC_PROJECT_ID}
           userName = {username}
           userSecret = {secret}
-          renderNewMessageForm={() => <MessageFormSocial />}
+          renderNewMessageForm={() => <MessageFormSocial autocomplete="off"/>}
         />
       </div>
     </div>
