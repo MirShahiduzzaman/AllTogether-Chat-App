@@ -17,11 +17,15 @@ Create your own repo then follow instructions below before commiting and pushing
 
 Link to [vercel](https://vercel.io) or [glitch](glitch.com)
 
-## Setup Finished Project
+## Instructions
 
-Go to [Chat Engine](https://chatengine.io) and create a account and project.
+Go to [Chat Engine](https://chatengine.io) to create an account and project.
 
-Find the Private Key and Project ID and replace the values with your API keys.
+Note the Private Key and Project ID
+
+Go to .env_sample and replace YOUR_PRIVATE_KEY_HERE with your private key and YOUR_PROJECT_ID_HERE with your project ID
+
+Rename .env_sample to .env
 
 ### `yarn dev`
 
