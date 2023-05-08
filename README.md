@@ -7,6 +7,14 @@
     height="100%"
 />
 
+# Chat Page
+
+<img 
+    src="./chat-screen.png"
+    width="75%" 
+    height="100%"
+/>
+
 This project is powered by [Chat Engine](https://chatengine.io).
 
 ## Setup
