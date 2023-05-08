@@ -11,8 +11,8 @@
 
 <img 
     src="./chat-screen.png"
-    width="60%" 
-    height="80%"
+    width="65%" 
+    height="100%"
 />
 
 This project is powered by [Chat Engine](https://chatengine.io).
