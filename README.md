@@ -3,7 +3,15 @@
 # Login/Sign Up
 <img 
     src="./login-screen.png"
-    width="75%" 
+    width="60%" 
+    height="80%"
+/>
+
+# Chat Page
+
+<img 
+    src="./chat-screen.png"
+    width="65%" 
     height="100%"
 />
 
