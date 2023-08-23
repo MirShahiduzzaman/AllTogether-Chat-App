@@ -1,4 +1,4 @@
-# ConnectUs Messages
+# AllTogether Chat App
 
 # Login/Sign Up
 <img 
