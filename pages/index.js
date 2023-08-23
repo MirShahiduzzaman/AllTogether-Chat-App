@@ -8,6 +8,8 @@ import axios from 'axios';
 // require('dotenv').config({ path: '../.env' })
 
 export default function Auth() {
+  var name = process.env.NEXT_PUBLIC_API_KEY;
+
   const { username, secret, setUsername, setSecret } = useContext(Context);
 
   const router = useRouter();
@@ -30,6 +32,7 @@ export default function Auth() {
       <div className="auth-container">
         <form className="auth-form" onSubmit={(e) => onSubmit(e)}>
           <div className="auth-title">AllTogether</div>
+          {name}
 
           <div className="input-container">
             <input
