@@ -39,14 +39,14 @@ export default function Auth() {
             />
           </div>
 
-          {/* <div className="input-container">
+          <div className="input-container">
             <input
               type="password"
               placeholder="Password"
               className="text-input"
               onChange={e => setSecret(e.target.value)}
             />
-          </div> */}
+          </div>
 
           <button type="submit" className="submit-button" >
             Login / Sign Up
@@ -54,7 +54,7 @@ export default function Auth() {
         </form>
       </div>
 
-      <div className="instruct">
+      {/* <div className="instruct">
         For testing, can use these logins:
         
         <ul>
@@ -64,7 +64,7 @@ export default function Auth() {
           <li>user: messi, pass: mess</li>
           <li>user: renaldo, pass: penalty</li>
         </ul>
-      </div>
+      </div> */}
 
       
     </div>
