@@ -8,8 +8,6 @@ import axios from 'axios';
 // require('dotenv').config({ path: '../.env' })
 
 export default function Auth() {
-  var name = process.env.NEXT_PUBLIC_API_KEY;
-
   const { username, secret, setUsername, setSecret } = useContext(Context);
 
   const router = useRouter();
@@ -32,7 +30,6 @@ export default function Auth() {
       <div className="auth-container">
         <form className="auth-form" onSubmit={(e) => onSubmit(e)}>
           <div className="auth-title">AllTogether</div>
-          {name}
 
           <div className="input-container">
             <input
@@ -55,6 +52,18 @@ export default function Auth() {
             Login / Sign Up
           </button>
         </form>
+      </div>
+
+      <div>
+        For testing, can use these logins:
+        
+        <ul>
+          <li>user: sam, pass: hello</li>
+          <li>user: martin, pass: world</li>
+          <li>user: brainy, pass: math</li>
+          <li>user: messi, pass: mess</li>
+          <li>user: renaldo, pass: penalty</li>
+        </ul>
       </div>
     </div>
   );
