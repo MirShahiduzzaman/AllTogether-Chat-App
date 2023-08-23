@@ -33,7 +33,7 @@ export default function Auth() {
 
           <div className="input-container">
             <input
-              placeholder="Email"
+              placeholder="Username"
               className="text-input"
               onChange={e => setUsername(e.target.value)}
             />
@@ -52,19 +52,21 @@ export default function Auth() {
             Login / Sign Up
           </button>
         </form>
-      </div>
 
-      <div>
+        <div>
         For testing, can use these logins:
         
         <ul>
-          <li>user: sam, pass: hello</li>
-          <li>user: martin, pass: world</li>
+          <li>user: mir, pass: hello</li>
+          <li>user: matin, pass: world</li>
           <li>user: brainy, pass: math</li>
           <li>user: messi, pass: mess</li>
           <li>user: renaldo, pass: penalty</li>
         </ul>
       </div>
+      </div>
+
+      
     </div>
   );
 }
