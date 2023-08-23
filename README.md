@@ -4,7 +4,7 @@ Link: https://chat-nextjs-three.vercel.app/
 
 For testing, please use these logins:
 
-user: mir, &nbsp; &nbsp; &nbsp;pass: hello
+user: mir, &nbsp; &nbsp; &nbsp; pass: hello
 
 user: sabbir, &nbsp; pass: world
 
