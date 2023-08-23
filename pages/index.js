@@ -53,20 +53,6 @@ export default function Auth() {
           </button>
         </form>
       </div>
-
-      <span className="instruct">
-        For testing, can use these logins:
-        
-        <ul>
-          <li>user: mir, pass: hello</li>
-          <li>user: matin, pass: world</li>
-          <li>user: brainy, pass: math</li>
-          <li>user: messi, pass: mess</li>
-          <li>user: renaldo, pass: penalty</li>
-        </ul>
-      </span>
-
-      
     </div>
   );
 }

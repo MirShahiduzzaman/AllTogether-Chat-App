@@ -1,5 +1,15 @@
 # AllTogether Chat App
 
+Link: https://chat-nextjs-three.vercel.app/
+
+For testing, please use these logins:
+
+user: mir,     pass: hello
+user: sabbir,  pass: world
+user: brainy,  pass: math
+user: messi,   pass: mess
+user: renaldo, pass: penalty
+
 # Login/Sign Up
 <img 
     src="./login-screen.png"

@@ -33,13 +33,6 @@
   font-size: 26px;
 }
 
-.instruct {
-  position: relative;
-  top: 150px;
-  left: calc(50vw - 240px - 100px);
-  right:auto;
-}
-
 .text-input {
   width: 100%;
   padding: 8px;
