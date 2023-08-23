@@ -39,14 +39,14 @@ export default function Auth() {
             />
           </div>
 
-          <div className="input-container">
+          {/* <div className="input-container">
             <input
               type="password"
               placeholder="Password"
               className="text-input"
               onChange={e => setSecret(e.target.value)}
             />
-          </div>
+          </div> */}
 
           <button type="submit" className="submit-button" >
             Login / Sign Up
