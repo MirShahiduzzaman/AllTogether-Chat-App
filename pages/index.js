@@ -52,8 +52,9 @@ export default function Auth() {
             Login / Sign Up
           </button>
         </form>
+      </div>
 
-        <div>
+      <div className="instruct">
         For testing, can use these logins:
         
         <ul>
@@ -63,7 +64,6 @@ export default function Auth() {
           <li>user: messi, pass: mess</li>
           <li>user: renaldo, pass: penalty</li>
         </ul>
-      </div>
       </div>
 
       
