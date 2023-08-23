@@ -38,9 +38,10 @@ export default function Chats() {
 
   return (
     <div className="background">
-      <div className="logout">
+      <span>{username}</span>
+      <span className="logout">
         <button onClick={logout}>Logout</button>
-      </div>
+      </span>
 
       <div className="shadow">
         <ChatEngine
