@@ -2,7 +2,8 @@
 
 Link: https://chat-nextjs-three.vercel.app/
 
-For testing, please use these logins:
+# Login Credentials
+Please use these logins as ChatEngine API allows for a limited number of users:
 
 user: mir, &nbsp; &nbsp; &nbsp; pass: hello
 
